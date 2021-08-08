@@ -2,7 +2,7 @@ import React from 'react';
 import { TopNavBar } from './components';
 import { Intro, Experience, Skills, Projects, Contact } from './sections'
 
-function App() {
+function App(): React.ReactElement {
   return (
     <div>
       <TopNavBar />

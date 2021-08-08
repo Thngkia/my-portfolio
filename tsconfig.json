@@ -20,7 +20,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "outDir": "build/dist",
-    "noImplicitAny": false
+    "noImplicitAny": false,
   },
   "include": [
     "src"
