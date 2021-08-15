@@ -12,6 +12,7 @@ export const TopNavBar = (): React.ReactElement => {
                     <a className="mr-5 hover:text-gray-900" href="#experience">Experience</a>
                     <a className="mr-5 hover:text-gray-900" href="#skills">Skills</a>
                     <a className="mr-5 hover:text-gray-900" href="#projects">Projects</a>
+                    <a className="mr-5 hover:text-gray-900" href="#education">Education</a>
                     <a className="mr-5 hover:text-gray-900" href="#contact">Contact</a>
                 </nav>
             </div>

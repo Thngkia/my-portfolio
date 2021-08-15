@@ -1,0 +1,23 @@
+[
+  {
+    "company": "Ufinity Pte Ltd",
+    "country": "Singapore",
+    "duration": "June 2021 - Present",
+    "jobTitle": "Full Stack Software Engineer",
+    "summary": "Part of the Strategic Solutions team, working with partners like GovTech on projects using JS tech stack (React, Node, Tailwind, Sequelize, MySql, TS)"
+  },
+  {
+    "company": "HP Inc",
+    "country": "Singapore / Oregon, USA",
+    "duration": "July 2019 - June 2021",
+    "jobTitle": "R&D Engineer",
+    "summary": "Worked on process and Tooling development. Worked on development of new ink supplies products. 6 months attachment to Oregon, USA for knowledge transfer and training."
+  },
+  {
+    "company": "BotFactory",
+    "country": "NYC, USA",
+    "duration": "June 2017 - June 2018",
+    "jobTitle": "Mechanical Engineer",
+    "summary": "Worked as the mechanical design engineer on the flagship product, a PCB board printer. Developed multiple designs using 3D CAD and sourced for parts for manufacturing."
+  }
+]

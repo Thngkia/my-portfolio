@@ -1,45 +1,39 @@
 import * as React from 'react';
+import experience from '../data/experience.json'
+import {SectionHeader} from '../components'
 
-interface props {
+interface Props {
     id: string
 }
 
-export function Experience({ id }: props): React.ReactElement {
+interface Entry {
+    company: string;
+    country: string;
+    duration: string;
+    jobTitle: string;
+    summary: string;
+}
+
+const ExperienceEntry = ({company, country, duration, jobTitle, summary} :Entry) => (
+    <div className="py-8 flex flex-wrap md:flex-nowrap">
+        <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+            <span className="font-semibold title-font text-gray-700">{company}</span>
+            <span className="font-semibold title-font text-gray-700">{country}</span>
+            <span className="mt-1 text-gray-500 text-sm">{duration}</span>
+        </div>
+        <div className="md:flex-grow">
+            <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">{jobTitle}</h2>
+            <p className="leading-relaxed">{summary}</p>
+        </div>
+    </div>
+)
+
+export const Experience = ({ id }: Props): React.ReactElement => {
     return (
         <section className="text-gray-600 body-font overflow-hidden" id={id}>
             <div className="container px-5 py-24 mx-auto">
-                <div className="-my-8 divide-y-2 divide-gray-100">
-                    <div className="py-8 flex flex-wrap md:flex-nowrap">
-                        <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                            <span className="font-semibold title-font text-gray-700">CATEGORY</span>
-                            <span className="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
-                        </div>
-                        <div className="md:flex-grow">
-                            <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
-                            <p className="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                        </div>
-                    </div>
-                    <div className="py-8 flex flex-wrap md:flex-nowrap">
-                        <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                            <span className="font-semibold title-font text-gray-700">CATEGORY</span>
-                            <span className="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
-                        </div>
-                        <div className="md:flex-grow">
-                            <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Meditation bushwick direct trade taxidermy shaman</h2>
-                            <p className="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                        </div>
-                    </div>
-                    <div className="py-8 flex flex-wrap md:flex-nowrap">
-                        <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                            <span className="font-semibold title-font text-gray-700">CATEGORY</span>
-                            <span className="text-sm text-gray-500">12 Jun 2019</span>
-                        </div>
-                        <div className="md:flex-grow">
-                            <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Woke master cleanse drinking vinegar salvia</h2>
-                            <p className="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                        </div>
-                    </div>
-                </div>
+                <SectionHeader title={"Experience"} />
+                {experience.map((item) => <ExperienceEntry {...item} />)}
             </div>
         </section>
     );
