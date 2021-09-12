@@ -1,7 +1,6 @@
 export * from './Contact'
 export * from './Experience'
 export * from './Projects'
-export * from './Skills'
 export * from './Intro'
 export * from './CodingSkills'
 export * from './Education'

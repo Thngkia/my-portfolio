@@ -1,6 +1,6 @@
 import React from 'react';
 import { TopNavBar } from './components';
-import { Intro, Experience, Skills, Projects, Contact, CodingSkills, Education } from './sections'
+import { Intro, Experience, Projects, Contact, CodingSkills, Education } from './sections'
 
 function App(): React.ReactElement {
   return (
@@ -8,7 +8,6 @@ function App(): React.ReactElement {
       <TopNavBar />
       <Intro id={"intro"} />
       <Experience id={"experience"} />
-      {/* <Skills id={"skills"} /> */}
       <CodingSkills id={"skills"}/>
       <Projects id={"projects"} />
       <Education id={"education"} />

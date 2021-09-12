@@ -1,8 +1,8 @@
 import React from 'react'
 import { SectionHeader } from '../components'
 import educationData from '../data/education.json'
-import GaLogo from '../GA_logo.png'
-import NusLogo from '../NUS_logo.png'
+import GaLogo from '../assets/GA_logo.png'
+import NusLogo from '../assets/NUS_logo.png'
 
 interface Props {
   id: string

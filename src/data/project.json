@@ -1,0 +1,22 @@
+[
+  {
+    "name": "2048 Browser Game",
+    "summary": "Created a browser version of the popular mobile game, where you slide tiles to combine numbers.",
+    "link": "https://github.com/Thngkia/2048_js"
+  },
+  {
+    "name": "Dengue Heatmap",
+    "summary": "Built with react and using the NEA api to circle out areas of high dengue risk, and notify users.",
+    "link": "https://github.com/Thngkia/SEIF3-Project3-Frontend"
+  },
+  {
+    "name": "Expense tracker",
+    "summary": "Built with Bulma, Express and MongoDB, this expense tracker helps individuals manage finance.",
+    "link": "https://github.com/Thngkia/expense_tracker"
+  },
+  {
+    "name": "Barcode Scanner Mobile App",
+    "summary": "Built with react native, this barcode scanner is made for businesses to use as a mobile POS",
+    "link": "https://github.com/Thngkia/Project4-React-Native"
+  }
+]
